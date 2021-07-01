@@ -1,0 +1,131 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+% ---------------------------------------------------
+% General
+% ---------------------------------------------------
+\usepackage{graphicx,longtable}
+
+\usepackage[english]{babel}
+%\usepackage{url}
+
+%\usepackage{lineno}\linenumbers %Only if you want lined numbers in the pdf. Switch on with ``lineno''
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+ 
+\usepackage[bookmarks=true, pdfencoding=auto, unicode]{hyperref} % option "unicode" is required when using xelatex.
+\hypersetup{
+  hidelinks,
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=blue,
+}
+ \usepackage{bookmark}
+
+% ---------------------------------------------------
+% Bibliography
+% ---------------------------------------------------
+\usepackage{natbib}
+
+% ---------------------------------------------------
+% Page layout and text layout
+% ---------------------------------------------------
+\usepackage[a4paper,top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.7cm]{geometry}
+\usepackage[margin=24pt,format=plain,font=footnotesize,labelfont=bf,skip=10pt]{caption}  
+
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\small} % Set the abstract itself to small italic text
+
+\usepackage{ae,amssymb,amsfonts,amsmath,microtype}
+
+\usepackage{setspace}
+%\singlespacing
+%\onehalfspacing
+%\doublespacing
+%\setstretch{1.2}
+\linespread {1.2}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt plus 2pt minus 1pt}
+
+% Most journals do not require a headline, but this is how to do it just in case.
+%\usepackage[headsepline]{scrpage2}
+%\clearscrheadfoot
+%\pagestyle{scrheadings}
+%\automark{section}
+%\ohead{\pagemark}
+%\chead{\headmark}
+%\ihead{Short title}
+
+% If you want to put all figures and tables to the end of the manuscript.
+\usepackage[nolists]{endfloat}
+
+
+% ---------------------------------------------------
+% Fonts and typesetting
+% ---------------------------------------------------
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+
+\usepackage[utf8]{inputenc} 
+\usepackage{lmodern}
+%\usepackage{librecaslon}
+\usepackage[scaled]{helvet}
+
+
+% -------------------------------------------------------
+% To do notes.
+%\usepackage[x11names]{xcolor}
+%\usepackage[colorinlistoftodos, textsize=footnotesize, linecolor=red!60, backgroundcolor=Ivory2, bordercolor=red!60]{todonotes}
+
+
+
+% ---------------------------------------------------
+% Title section
+% ---------------------------------------------------
+\usepackage{authblk}
+\renewcommand\Authfont{\normalsize}
+\renewcommand\Affilfont{\small\itshape}
+
+\title{A demonstration of Markdown from outer space}
+\date{}
+
+\author[1,2]{First author}
+\author[1,2]{Niko A. Busch\thanks{
+		Corresponding author:\newline
+		Niko A. Busch\newline
+		University of Münster\newline
+		Institute of  Psychology\newline
+		Fliednerstrasse 21\newline
+		48149 Münster, Germany\newline
+		Tel.: +49-302093-1724\newline 
+		niko.busch@wwu.de}}
+\affil[1]{Institute of Psychology, University of Münster, Germany}
+\affil[2]{Otto-Creutzfeldt-Center for Cognitive and Behavioral Neuroscience, University of Münster, Germany}
+
+% -----------------------------------------------------------------
+% Main text.
+% -----------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\begin{abstract} 
+This is the abstract.
+\end{abstract}  
+
+\input{draft}
+
+\bibliographystyle{apalike}
+\bibliography{mybib}
+
+\end{document}
