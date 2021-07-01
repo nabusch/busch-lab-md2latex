@@ -1,5 +1,5 @@
-# Methods {#sec:methods}
-I am describing methods. We did it like so: $\alpha=\beta * \frac{\pi}{2}$. This method was described in [@michelDistinctContributions2021].
+# Methods
+I am describing methods. We did it like so: $\alpha=\beta * \frac{\pi}{2}$. This method was described in @michelDistinctContributions2021.
 
 Look again at that dot (Figure \ref{paleblue}). That's here. That's home. That's us. 
 
