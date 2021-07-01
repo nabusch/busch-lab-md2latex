@@ -11,12 +11,12 @@ However, I often find that Zettlr's built-in export function is not sufficient f
 ## What you need
 It took me a while to figure out how to do just that, and there might be easier ways to do it, but now this is what I came up with.
 
-Things you need:
+Things you need, included in this repo:
 - Nikolay Yakimov's pandoc-crossref filter for the equivalent of Latex's \label{foo} and \ref{foo}: https://github.com/lierdakil/pandoc-crossref/releases
 - A shell/batch script with the calls to Pandoc and pdflatex (md2tex.bat; included in this repo). Since I am  on MS Windows, this script has a .bat file extension and uses the Windows-appropriate symbol for commenting (`::`). However, the actual content of this script, i.e. the calls to pandoc and LaTeX are OS- independent, so it should be easy to adapt this script to Linux or Mac.
 - A LaTeX template (article_template.tex; included in this repo). This template should contain the preamble with all packages and option for layout, typography etc. The main body simply has a \include{} statement, which loads the .tex file with all the content and a corresponding bibliography.
 
-Also needed, not included in this repo, but if you are interested in this, you probably have it already:
+Also needed, not included in this repo, but if you are interested in this topic, you probably have it already:
 - Tools for writing: Zettlr and Zotero
 - I connect Zettlr to my Zotero Library as explained in [this video](https://www.youtube.com/watch?v=0egU3eLSSew).
 - Pandoc
